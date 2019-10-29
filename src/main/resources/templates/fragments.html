@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div th:fragment="languages">
+    <a href="?lang=en_GB" th:text="#{language.english}">English</a>
+    <a href="?lang=de_DE" th:text="#{language.german}">Deutsch</a>
+    <a href="?lang=pl_PL" th:text="#{language.polish}">Polski</a>
+</div>
+
+<div th:fragment="header"></div>
+
+<div th:fragment="footer"></div>
+
+<div th:fragment="menu"></div>
+</body>
+</html>
