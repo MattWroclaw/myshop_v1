@@ -4,6 +4,8 @@ import lombok.Data;
 import org.springframework.util.StringUtils;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
 
 @Data
 @Entity
@@ -15,8 +17,12 @@ public class Product {
     @Column(name = "product_id")
     private long id;
 
+    @Size(min = 2)
+    @NotBlank
     private String title;
 
+    @Size(min = 2)
+    @NotBlank
     private String description;
 
     private int initialStockAmount;

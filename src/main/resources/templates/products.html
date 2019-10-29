@@ -5,6 +5,8 @@
     <title>My e-shop</title>
 </head>
 <body>
+<div th:text="#{app.name}"/>
 Welcome to my e-shop
+<div th:replace="fragments :: languages">Jezyki</div>
 </body>
 </html>

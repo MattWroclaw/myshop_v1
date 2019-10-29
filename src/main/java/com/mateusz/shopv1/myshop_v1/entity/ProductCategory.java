@@ -16,11 +16,9 @@ public class ProductCategory {
     @Column
     private String categoryName;
 
-
     @OneToOne
     @JoinColumn(name = "id_product", unique = true)
     private Product product;
-
 
 //    private ProductCategory productCategory;
 }

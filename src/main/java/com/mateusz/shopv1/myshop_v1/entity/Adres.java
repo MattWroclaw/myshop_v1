@@ -21,7 +21,8 @@ public class Adres {
 
     private String zipCode;
 
-    @OneToOne (mappedBy = "adres", cascade = CascadeType.PERSIST)
+    @OneToOne(cascade = CascadeType.PERSIST)
+    @JoinColumn(name = "id_customer", unique = true)
     private Customer customer;
 
 }

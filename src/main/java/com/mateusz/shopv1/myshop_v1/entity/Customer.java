@@ -17,9 +17,7 @@ public class Customer {
 
     private String password;
 
-    @OneToOne
-    @JoinColumn(name = "ip_adresu", unique = true)
+    @OneToOne(mappedBy = "customer", cascade = CascadeType.PERSIST)
     private Adres adres;
-
 
 }
